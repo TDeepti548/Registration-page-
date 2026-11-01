@@ -1,0 +1,225 @@
+</head>
+<body>
+
+<div class="container">
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+<div class="input-box">
+<label>Full Name</label>
+<input type="text" placeholder="Enter Full Name" required>
+</div>
+
+<div class="input-box">
+<label>Email</label>
+<input type="email" placeholder="Enter Email" required>
+</div>
+
+<div class="input-box">
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter Mobile Number" required>
+</div>
+
+<div class="input-box">
+<label>Password</label>
+<input type="password" placeholder="Enter Password" required>
+</div>
+
+<div class="input-box">
+<label>Confirm Password</label>
+<input type="password" placeholder="Confirm Password" required>
+</div>
+
+<div class="gender">
+<label>Gender</label><br><br>
+
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+
+</div>
+
+<div class="input-box">
+<label>Department</label>
+<select required>
+<option value="">Select Department</option>
+<option>Computer Science</option>
+<option>Information Technology</option>
+<option>Electronics</option>
+<option>Mechanical</option>
+<option>Civil</option>
+<option>Electrical</option>
+<option>BCA</option>
+<option>BBA</option>
+<option>MCA</option>
+<option>MBA</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>City</label>
+<select required>
+<option value="">Select City</option>
+<option>Delhi</option>
+<option>Mumbai</option>
+<option>Lucknow</option>
+<option>Bhopal</option>
+<option>Pune</option>
+<option>Jaipur</option>
+<option>Kanpur</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>Address</label>
+<textarea rows="3" placeholder="Enter Address"></textarea>
+</div>
+
+<div class="checkbox">
+<input type="checkbox" required>
+I accept the Terms & Conditions
+</div>
+
+<div class="buttons">
+<input type="submit" value="Register" class="submit">
+<input type="reset" value="Reset" class="reset">
+</div>
+
+<div class="login">
+<p>Already have an account?
+<a href="#">Login</a>
+</p>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(135deg,white, white);
+    padding:20px;
+}
+
+.container{
+    width:420px;
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+.container h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+.input-box{
+    margin-bottom:15px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#444;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+    outline:none;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus{
+    border:2px solid #4facfe;
+}
+
+.gender{
+    margin-bottom:15px;
+}
+
+.gender label{
+    font-weight:bold;
+}
+
+.gender input{
+    margin-right:5px;
+}
+
+.checkbox{
+    margin-bottom:20px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:space-between;
+}
+
+.buttons input{
+    width:48%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    color:white;
+}
+
+.submit{
+    background:#28a745;
+}
+
+.submit:hover{
+    background:#218838;
+}
+
+.reset{
+    background:#dc3545;
+}
+
+.reset:hover{
+    background:#c82333;
+}
+
+.login{
+    text-align:center;
+    margin-top:20px;
+}
+
+.login a{
+    text-decoration:none;
+    color:#007bff;
+    font-weight:bold;
+}
+
+.login a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
